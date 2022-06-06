@@ -49,7 +49,7 @@ $(() => {
         loop: true,
         margin: 60,
         nav: true,
-        navText: ["<img src='../assets/img/announcement-left.svg'>", "<img src='../assets/img/announcement-right.svg'>"],
+        navText: ["<img src='./assets/img/announcement-left.svg'>", "<img src='./assets/img/announcement-right.svg'>"],
         responsive: {
             0: {
                 items: 1
@@ -66,7 +66,7 @@ $(() => {
         loop: true,
         margin: 30,
         nav: true,
-        navText: ["<img src='../assets/img/photo-right.svg'>", "<img src='../assets/img/photo-right.svg'>"],
+        navText: ["<img src='./assets/img/photo-right.svg'>", "<img src='./assets/img/photo-right.svg'>"],
         responsive: {
             0: {
                 items: 1
