@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/gerb.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <title>Dim</title>
+</head>
+
+<body>
+
+    <header class="position-relative">
+        <img src="./assets/img/pattern.svg" class="d-block header-pattern" style="object-fit: cover;" height="100%"
+            width="100%" alt="">
+        <div class="header-img">
+            <img src="./assets/img/header.svg" class="d-block" width="100%" alt="">
+        </div>
+        <div class="menu-section">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Əsas səhifə</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Haqqımızda
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                    <li><a class="dropdown-item" href="#">Ümumi məlumat</a></li>
+                                    <li><a class="dropdown-item" href="#">Rəhbərlik</a></li>
+                                    <li><a class="dropdown-item" href="#">Nizamnamə</a></li>
+                                    <li><a class="dropdown-item" href="#">Struktur</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Qanunvericilik
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                    <li><a class="dropdown-item" href="#">Qanunlar</a></li>
+                                    <li><a class="dropdown-item" href="#">Məcəllələr</a></li>
+                                    <li><a class="dropdown-item" href="#">Fərmanlar</a></li>
+                                    <li><a class="dropdown-item" href="#">Sərəncamlar</a></li>
+                                    <li><a class="dropdown-item" href="#">Nazirlər Kabinetinin qərarları</a></li>
+                                    <li><a class="dropdown-item" href="#">Mərkəzin hüquqi aktları</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Mətbuat xidməti
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                    <li><a class="dropdown-item" href="#">Xəbərlər</a></li>
+                                    <li><a class="dropdown-item" href="#">Elanlar</a></li>
+                                    <li><a class="dropdown-item" href="#">Məqalələr</a></li>
+                                    <li><a class="dropdown-item" href="#">Müsahibələr</a></li>
+                                    <li><a class="dropdown-item" href="#">Statistik məlumatlar</a></li>
+                                    <li><a class="dropdown-item" href="#">Hesabatlar</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Mərkəzlə əlaqə
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                                    <li><a class="dropdown-item" href="#">Sədrə məktub</a></li>
+                                    <li><a class="dropdown-item" href="#">Elektron müraciət</a></li>
+                                    <li><a class="dropdown-item" href="#">Qəbul günləri</a></li>
+                                    <li><a class="dropdown-item" href="#">Ünvan</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Elektron xidmətlər</a>
+                            </li>
+                        </ul>
+
+                        <div class="form-icon">
+                            <img src="./assets/img/search.svg" alt="">
+                        </div>
+                        <form class="form-section d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Axtar" aria-label="Search">
+                            <button class="btn" type="submit"><img src="./assets/img/search.svg" alt=""></button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="cabinet-btn container mx-auto">
+            <button><img src="./assets/img/user.svg" alt="">ŞƏXSİ KABİNET</button>
+        </div>
+
+        <section class="news-section container">
+
+            <h3>Xəbərlər</h3>
+
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="back-color"></div>
+                        <img src="./assets/img/slider.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption slider-caption">
+                            <div class="d-flex">
+                                <span class="slider-day">04</span>
+                                <div class="slider-date">
+                                    <p>Fev</p>
+                                    <p>2022</p>
+                                </div>
+                            </div>
+                            <h2>Cari ilin ilk ayında imtahanların keçirilməsi
+                                diqqətdə saxlanılıb</h2>
+                            <a href="#" class="more-btn">Ətraflı</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="back-color"></div>
+                        <img src="./assets/img/slider1.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption slider-caption">
+                            <div class="d-flex">
+                                <span class="slider-day">24</span>
+                                <div class="slider-date">
+                                    <p>Mar</p>
+                                    <p>2022</p>
+                                </div>
+                            </div>
+                            <h2>Müsabiqələrə sənəd qəbulu və imtahanların keçirilməsi davam edib</h2>
+                            <a href="#" class="more-btn">Ətraflı</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="back-color"></div>
+                        <img src="./assets/img/slider2.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption slider-caption">
+                            <div class="d-flex">
+                                <span class="slider-day">27</span>
+                                <div class="slider-date">
+                                    <p>Sen</p>
+                                    <p>2022</p>
+                                </div>
+                            </div>
+                            <h2>Gömrük orqanlarında xidmətə qəbul üçün test imtahanları keçirilir</h2>
+                            <a href="#" class="more-btn">Ətraflı</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev slider-controller" type="button"
+                    data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next slider-controller" type="button"
+                    data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+
+        <section class="main-section container">
+            <h3>ƏSAS BÖLMƏLƏR</h3>
+            <img src="./assets/img/divider.svg" alt="">
+            <div class="card-section row">
+                <div class="col-4">
+                    <a href="" class="card-item">
+                        <img src="./assets/img/card1.svg" alt="">
+                        <p>MÜSABİQƏ ELANLARI</p>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="" class="card-item">
+                        <img src="./assets/img/card2.svg" alt="">
+                        <p>DÖVLƏT QULLUĞUNA QƏBUL</p>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <div class="card-item">
+                        <img src="./assets/img/card3.svg" alt="">
+                        <p>EHTİYAT KADRLAR</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href="" class="card-item">
+                        <img src="./assets/img/card4.svg" alt="">
+                        <p>TƏQDİMATLAR</p>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="" class="card-item">
+                        <img src="./assets/img/card5.svg" alt="">
+                        <p>ETİK DAVRANIŞ QAYDALARI</p>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="" class="card-item">
+                        <img src="./assets/img/card6.svg" alt="">
+                        <p>APELİYASİYANIN KEÇİRİLMƏ
+                            QAYDALARI</p>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="" class="card-item">
+                        <img src="./assets/img/card7.svg" alt="">
+                        <p>İMTAHANIN TƏŞKİLİ VƏ KEÇİRİLMƏ
+                            QAYDALARI</p>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="" class="card-item">
+                        <img src="./assets/img/card8.svg" alt="">
+                        <p>MÜSAHİBƏ PROQRAMLARI</p>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="" class="card-item">
+                        <img src="./assets/img/card9.svg" alt="">
+                        <p>TEST İMTAHANI PROQRAMLARI</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="useful-section container">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            FAYDALI MƏLUMATLAR
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <a href="#">
+                                        Xidməti fəaliyyətin qiymətləndirilməsi qaydası
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        Naxçıvan Musiqi Kollecində müəllimlərin işə qəbulu
+                                        qaydaları
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        Test imtahanının keçirilmə qaydası
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        Musiqi müəllimlərinin işə qəbulu və qiymətləndirilməsi
+                                        qaydaları
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        Müsahibənin keçirilmə qaydaları
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        Mədəniyyət Nazirliyinin strukturuna daxil olmayan
+                                        tabeliyindəki müəssisələrə işə qəbul qaydaları
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        Müsahibədə iştirak etmək üçün sənədlərin qəbulu
+                                        qaydaları
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        İcbari Tibbi Siğorta üzrə Dövlət Agentliyinə işə qəbul
+                                        qaydaları
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        Vakant vəzifənin tutulma şərtləri
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        Meliorasiya və Su Təsərrüfatı Açıq Səhmdar Cəmiyyətinə işə
+                                        qəbul qaydaları
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        Müəllimlərin işə qəbulu və qiymətləndirilməsi qaydaları
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        Peşəkar mühasib sertifikatının verilməsi qaydaları
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        Tibb işçilərinin dövlət səhiyyə müəssisələrinə işə qəbulu və
+                                        sertifikatlaşdırma qaydası
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        Əmək müqaviləsi nümunələri
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        Dövlət ümumi təhsil müəssisələrində işləyən
+                                        təhsilverənlərin sertifikatlaşdırma qaydası
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        Dövlət qulluğu vəzifələri üçün Sertifikatın forması
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        Dövlət teleradio və mətbuat orqanlarına işə qəbul
+                                        qaydaları
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="#">
+                                        Müsahibə elanının forması
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="announcement-section">
+            <div class="container">
+                <h3>Elanlar</h3>
+                <div class="owl-carousel owl-carousel1 owl-theme announcement-cards">
+                    <div class="card wow bounceIn">
+                        <div class="card-body">
+                            <h6 class="card-title">Müsabiqə elanı</h6>
+                            <p class="card-text">Ədliyyə orqanlarına işə qəbul olmaq istəyənlərin
+                                nəzərinə!</p>
+                            <div class="date_button d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <span class="slider-day">01</span>
+                                    <div class="slider-date">
+                                        <p>Fev</p>
+                                        <p>2022</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="more-btn">Ətraflı</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card wow bounceIn">
+                        <div class="card-body">
+                            <h6 class="card-title">Test imtahanı</h6>
+                            <p class="card-text">Dövlət musiqi təhsili müəssisələrinə işə
+                                qəbul olmaq istəyənlərin nəzərinə!</p>
+                            <div class="date_button d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <span class="slider-day">24</span>
+                                    <div class="slider-date">
+                                        <p>Yan</p>
+                                        <p>2022</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="more-btn">Ətraflı</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card wow bounceIn">
+                        <div class="card-body">
+                            <h6 class="card-title">Müsabiqə elanı</h6>
+                            <p class="card-text">Ədliyyə orqanlarına işə qəbul olmaq istəyənlərin
+                                nəzərinə!</p>
+                            <div class="date_button d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <span class="slider-day">04</span>
+                                    <div class="slider-date">
+                                        <p>Fev</p>
+                                        <p>2022</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="more-btn">Ətraflı</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="candidate-section container">
+            <h3>NAMİZƏDLƏRİN NƏZƏRİNƏ!</h3>
+            <div class="candidates">
+                <a href="#" class="candidate-item">
+                    <h5>12 Fevral 2022</h5>
+                    <p>Naxçıvan Muxtar Respublikası Səhiyyə Nazirliyinin tabeliyində olan müəssisələrdə vakant
+                        vəzifələrin tutulması üçün 22-23 fevral 2022-cil tarixlərdə keçiriləcək test imtahanlarının
+                        QRAFİKİ</p>
+                </a>
+                <a href="#" class="candidate-item">
+                    <h5>18 Yanvar, 2022</h5>
+                    <p>Naxçıvan Muxtar Respublikası Mədəniyyət Nazirliyinin tabeliyindəki müəssisələrə işə qəbul üçün
+                        MÜSABİQƏ ELANI </p>
+                </a>
+                <a href="#" class="candidate-item">
+                    <h5>7 Yanvar, 2022</h5>
+                    <p>Dövlət qulluğuna qəbul olmaq istəyənlər üçün YENİ HAZIRLIQ KURSU fəaliyyətə başlayacaqdır.</p>
+                </a>
+                <a href="#" class="candidate-item">
+                    <h5>17 Dekabr, 2021</h5>
+                    <p>Səhiyyə nazirliyinin tabeliyində olan müəssisələrə işə qəbul üçün MÜSABİQƏ ELANI</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="photo-section">
+            <div class="owl-carousel owl-carousel2 owl-theme container">
+                <div class="photo-card wow bounceIn">
+                    <div class="photo-img">
+                        <img src="./assets/img/photo3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photo-card wow bounceIn">
+                    <div class="photo-img">
+                        <img src="./assets/img/photo2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photo-card wow bounceIn">
+                    <div class="photo-img">
+                        <img src="./assets/img/photo3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photo-card wow bounceIn">
+                    <div class="photo-img">
+                        <img src="./assets/img/photo4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photo-card wow bounceIn">
+                    <div class="photo-img">
+                        <img src="./assets/img/photo2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="link-section container">
+            <div class="owl-carousel owl-carousel3 owl-theme">
+                <a href="#" class="link-card wow bounceIn">
+                    <div class="link-img">
+                        <div class="back-gradient"></div>
+                        <img src="./assets/img/link1.png" alt="">
+                        <p>ELEKTRON MÜRACİƏT</p>
+                    </div>
+                </a>
+                <a href="#" class="link-card wow bounceIn">
+                    <div class="link-img">
+                        <div class="back-gradient"></div>
+                        <img src="./assets/img/link2.png" alt="">
+                        <p>ŞƏXSİ KABİNETƏ GİRİŞ</p>
+                    </div>
+                </a>
+                <a href="#" class="link-card wow bounceIn">
+                    <div class="link-img">
+                        <div class="back-gradient"></div>
+                        <img src="./assets/img/link3.png" alt="">
+                        <p>STARTAP LAYİHƏLƏR ÜÇÜN
+                            MÜRACİƏT</p>
+                    </div>
+                </a>
+                <a href="#" class="link-card wow bounceIn">
+                    <div class="link-img">
+                        <div class="back-gradient"></div>
+                        <img src="./assets/img/link4.png" alt="">
+                        <p>DİM MOBİL TƏTBİQ</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-section container">
+            <div class="row">
+                <div class="col-3">
+                    <h2>AKTUAL KEÇİDLƏR</h2>
+                    <a href="" class="footer-item">Portal və saytlara keçid</a>
+                    <a href="" class="footer-item">www.e-qanun.az</a>
+                    <a href="" class="footer-item">www.huquqiaktlar.nakhchivan.az</a>
+                </div>
+                <div class="col-3">
+                    <h2>NAXÇIVANIN TURİZM POTENSİALI</h2>
+                    <a href="" class="footer-item">Turizm İnformasiya Mərkəzi</a>
+                    <a href="" class="footer-item">Tarixi abidələr</a>
+                    <a href="" class="footer-item">Mehmanxanalar</a>
+                    <a href="" class="footer-item">Muzeylər</a>
+                    <a href="" class="footer-item">Restoran və kafelər</a>
+                </div>
+                <div class="col-2">
+                    <h2>STATİSTİKA</h2>
+                    <p class="footer-item"><span class="statistic">Onlayn : </span><span>0</span></p>
+                    <p class="footer-item"><span class="statistic">Bu gün : </span><span>32</span></p>
+                    <p class="footer-item"><span class="statistic">Dünən : </span><span>308</span></p>
+                    <p class="footer-item"><span class="statistic">Bu həftə : </span><span>2417</span></p>
+                    <p class="footer-item"><span class="statistic">Bu ay : </span><span>6681</span></p>
+                    <p class="footer-item"><span class="statistic">Ümumi : </span><span>49666</span></p>
+
+                </div>
+                <div class="col-4 contact-section">
+                    <a href="tel:+994605653883" class="footer-item">
+                        <img class="contact-icon" src="./assets/img/phone.svg" alt="">
+                        <span>(+994) 36 545 65 71</span>
+                    </a>
+                    <a href="mailto:dim@nmr.az" class="footer-item">
+                        <img class="contact-icon" src="./assets/img/mail.svg" alt="">
+                        <span>dim@nmr.az</span>
+                    </a>
+                    <a href="https://www.google.com/maps/place/Nax%C3%A7%C4%B1van+Muxtar+Respublikas%C4%B1+Ali+M%C9%99clisinin+S%C9%99dri+yan%C4%B1nda+D%C3%B6vl%C9%99t+Qullu%C4%9Fu+M%C9%99s%C9%99l%C9%99l%C9%99ri+%C3%BCzr%C9%99+Komissiya/@39.2008548,45.4172704,21z/data=!4m8!1m2!2m1!1zTmF4w6fEsXZhbiDFn8mZaMmZcmksIEFaIDcwMDAsICBDyZlsaWwgTcmZbW3JmWRxdWx1emFkyZkga8O8w6fJmXNpIDIz!3m4!1s0x40142e07fa9bd4c9:0xd4e9392f7b02930e!8m2!3d39.2009038!4d45.417287"
+                        class="footer-item">
+                        <img class="contact-icon" src="./assets/img/location.svg" alt="">
+                        <span>Naxçıvan şəhəri, AZ 7000, Cəlil Məmmədquluzadə küçəsi 23</span>
+                    </a>
+                    <a href="" class="footer-item">
+                        <img class="contact-icon" src="./assets/img/instagram.svg" alt="">
+                        <span>nmr_dovlet_imtahan_merkezi</span>
+                    </a>
+                    <a href="" class="footer-item">
+                        <img class="contact-icon" src="./assets/img/facebook.svg" alt="">
+                        <span>Naxçıvan Muxtar Respublikasının Dövlət İmtahan Mərkəzi</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="subscribe-section row">
+                <form action="" class="d-flex col-4">
+                    <input type="text" class="form-control" placeholder="Sizin e-mail ünvanınız">
+                    <button class="form-control"><img src="./assets/img/send.svg" alt=""></button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            Dizayn və proqramlaşdırma <a href="http://rabite.nmr.az/">Naxçıvan Muxtar Respublikası Rabitə və Yeni
+                Texnologiyalar Nazirliyi</a>
+        </div>
+    </footer>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+    integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+<script src="./assets/js/owl.carousel.min.js"></script>
+<script src="./assets/js/main.js"></script>
+
+</html>
