@@ -1,0 +1,44 @@
+.appeal-section {
+    margin-top: 50px;
+}
+
+.appeal-section .appeal-content {
+    line-height: 22px;
+    text-align: justify;
+}
+
+.appeal-section .appeal-btn {
+    background-color: var(--lightBlueColor);
+    box-shadow: 0 0 10px 0 gray;
+    border-radius: 15px;
+    padding: 15px 0;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    transition: .3s all ease-in-out;
+}
+
+.appeal-section .appeal-btn:hover {
+    transform: scale(1.05);
+}
+
+.appeal-section .appeal-btn:active {
+    transform: scale(1);
+    box-shadow: 0 0 10px 2px gray;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .appeal-section .appeal-content {
+        line-height: 20px;
+        font-size: 14px;
+    }
+    
+    .appeal-section .appeal-btn {
+        width: 160px;
+        font-size: 14px;
+    }
+}

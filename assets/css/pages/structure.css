@@ -1,0 +1,10 @@
+.structure-section {
+    margin-top: 50px;
+}
+
+.structure-section img {
+    object-fit: cover;
+    width: 60%;
+    display: block;
+    margin: auto;
+}

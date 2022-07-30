@@ -1,0 +1,74 @@
+.laws-section {
+    margin-top: 50px;
+}
+
+.laws-section .law-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--lightBlueColor);
+}
+
+.law-items .law-item {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: .3s all ease-in-out;
+    line-height: 20px;
+}
+
+.law-items .law-item:hover {
+    color: var(--lightBlueColor);
+    transform: scale(1.02);
+}
+
+.single-law-section {
+    margin-top: 50px;
+}
+
+.see-file {
+    display: flex;
+    justify-content: right;
+}
+
+.see-file a {
+    display: inline-block;
+    margin-top: 30px;
+    color: #fff;
+    border-radius: 15px;
+    padding: 15px 20px;
+    background-color: var(--lightBlueColor); 
+    box-shadow: 0 0 10px 0 lightgray;
+    transition: .3s all ease-in-out;
+}
+
+.see-file a:hover {
+    transform: scale(1.05);
+}
+
+.see-file a:active {
+    transform: scale(1);
+}
+
+.see-file i {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 576px) {
+    .laws-section .law-title {
+        font-size: 25px;
+    }
+
+    .law-items .law-item {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .see-file a {
+        font-size: 12px;
+    }
+}

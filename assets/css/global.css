@@ -9,3 +9,12 @@
 
 /* Pages */
 @import url('./pages/home.css');
+@import url('./pages/information.css');
+@import url('./pages/management.css');
+@import url('./pages/charter.css');
+@import url('./pages/structure.css');
+@import url('./pages/laws.css');
+@import url('./pages/news.css');
+@import url('./pages/appeal.css');
+@import url('./pages/address.css');
+@import url('./pages/services.css');

@@ -84,13 +84,18 @@ body {
     line-height: 42px;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link:focus {
     color: rgb(224, 224, 224);
 }
 
 .dropdown-menu .dropdown-item {
     padding: 10px;
     border-bottom: 1px solid gray;
+}
+
+.dropdown-menu .dropdown-item:active {
+    background-color:rgb(244, 243, 243);
+    color: #000;
 }
 
 .navbar .active {
