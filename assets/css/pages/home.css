@@ -368,7 +368,7 @@
 
 .candidate-item:hover {
     color: rgba(0, 37, 92, 1);
-    background-image: url("/assets/img/candidate-hover.svg");
+    background-image: url("../../img/candidate-hover.svg");
     box-shadow: 0 0 10px 1px lightgray;
 }
 
