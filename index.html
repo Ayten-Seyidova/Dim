@@ -29,8 +29,8 @@
         </div>
         <div class="menu-section">
             <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <button class="navbar-toggler ml-5" type="button" data-bs-toggle="collapse"
+                <div class="container" id="menuContainer">
+                    <button class="navbar-toggler menu-btn" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -62,8 +62,7 @@
                                     <li><a class="dropdown-item" href="./laws.html">Məcəllələr</a></li>
                                     <li><a class="dropdown-item" href="./laws.html">Fərmanlar</a></li>
                                     <li><a class="dropdown-item" href="./laws.html">Sərəncamlar</a></li>
-                                    <li><a class="dropdown-item" href="./laws.html">Nazirlər Kabinetinin qərarları</a>
-                                    </li>
+                                    <li><a class="dropdown-item" href="./laws.html">Nazirlər Kabinetinin qərarları</a></li>
                                     <li><a class="dropdown-item" href="./laws.html">Mərkəzin hüquqi aktları</a></li>
                                 </ul>
                             </li>
@@ -95,12 +94,20 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="./services.html">Elektron xidmətlər</a>
                             </li>
+                            <div class="d-lg-none d-md-block">
+                                <form class="mobile-form-section mb-2 d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Axtar"
+                                        aria-label="Search">
+                                    <button class="btn mobile-btn" type="submit"><img src="./assets/img/search.svg"
+                                            alt=""></button>
+                                </form>
+                            </div>
                         </ul>
 
-                        <div class="form-icon">
+                        <div class="form-icon d-lg-block d-md-none">
                             <img src="./assets/img/search.svg" alt="">
                         </div>
-                        <form class="form-section d-flex" role="search">
+                        <form class="form-section d-lg-flex d-md-none" role="search">
                             <input class="form-control me-2" type="search" placeholder="Axtar" aria-label="Search">
                             <button class="btn" type="submit"><img src="./assets/img/search.svg" alt=""></button>
                         </form>
@@ -185,59 +192,59 @@
 
         <section class="main-section container">
             <h3>ƏSAS BÖLMƏLƏR</h3>
-            <img src="./assets/img/divider.svg" alt="">
+            <img src="./assets/img/divider.svg" class="d-block w-100" alt="">
             <div class="card-section row">
-                <div class="col-4">
+                <div class="main-item col-lg-4 col-md-4 col-sm-4 col-6">
                     <a href="" class="card-item" style="background-image: url('./assets/img/cardBack1.svg');">
                         <img src="./assets/img/card1.svg" alt="">
                         <p>MÜSABİQƏ ELANLARI</p>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="main-item col-lg-4 col-md-4 col-sm-4 col-6">
                     <a href="" class="card-item" style="background-image: url('./assets/img/cardBack2.svg');">
                         <img src="./assets/img/card2.svg" alt="">
                         <p>DÖVLƏT QULLUĞUNA QƏBUL</p>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="main-item col-lg-4 col-md-4 col-sm-4 col-6">
                     <div class="card-item" style="background-image: url('./assets/img/cardBack3.svg');">
                         <img src="./assets/img/card3.svg" alt="">
                         <p>EHTİYAT KADRLAR</p>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="main-item col-lg-4 col-md-4 col-sm-4 col-6">
                     <a href="" class="card-item" style="background-image: url('./assets/img/cardBack4.svg');">
                         <img src="./assets/img/card4.svg" alt="">
                         <p>TƏQDİMATLAR</p>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="main-item col-lg-4 col-md-4 col-sm-4 col-6">
                     <a href="" class="card-item" style="background-image: url('./assets/img/cardBack5.svg');">
                         <img src="./assets/img/card5.svg" alt="">
                         <p>ETİK DAVRANIŞ QAYDALARI</p>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="main-item col-lg-4 col-md-4 col-sm-4 col-6">
                     <a href="" class="card-item" style="background-image: url('./assets/img/cardBack6.svg');">
                         <img src="./assets/img/card6.svg" alt="">
                         <p>APELİYASİYANIN KEÇİRİLMƏ
                             QAYDALARI</p>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="main-item col-lg-4 col-md-4 col-sm-4 col-6">
                     <a href="" class="card-item" style="background-image: url('./assets/img/cardBack7.svg');">
                         <img src="./assets/img/card7.svg" alt="">
                         <p>İMTAHANIN TƏŞKİLİ VƏ KEÇİRİLMƏ
                             QAYDALARI</p>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="main-item col-lg-4 col-md-4 col-sm-4 col-6">
                     <a href="" class="card-item" style="background-image: url('./assets/img/cardBack8.svg');">
                         <img src="./assets/img/card8.svg" alt="">
                         <p>MÜSAHİBƏ PROQRAMLARI</p>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="main-item col-lg-4 col-md-4 col-sm-4 col-6">
                     <a href="" class="card-item" style="background-image: url('./assets/img/cardBack9.svg');">
                         <img src="./assets/img/card9.svg" alt="">
                         <p>TEST İMTAHANI PROQRAMLARI</p>
@@ -259,101 +266,101 @@
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <a href="#">
                                         Xidməti fəaliyyətin qiymətləndirilməsi qaydası
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <a href="#">
                                         Naxçıvan Musiqi Kollecində müəllimlərin işə qəbulu
                                         qaydaları
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <a href="#">
                                         Test imtahanının keçirilmə qaydası
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <a href="#">
                                         Musiqi müəllimlərinin işə qəbulu və qiymətləndirilməsi
                                         qaydaları
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <a href="#">
                                         Müsahibənin keçirilmə qaydaları
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <a href="#">
                                         Mədəniyyət Nazirliyinin strukturuna daxil olmayan
                                         tabeliyindəki müəssisələrə işə qəbul qaydaları
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <a href="#">
                                         Müsahibədə iştirak etmək üçün sənədlərin qəbulu
                                         qaydaları
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <a href="#">
                                         İcbari Tibbi Siğorta üzrə Dövlət Agentliyinə işə qəbul
                                         qaydaları
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <a href="#">
                                         Vakant vəzifənin tutulma şərtləri
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <a href="#">
                                         Meliorasiya və Su Təsərrüfatı Açıq Səhmdar Cəmiyyətinə işə
                                         qəbul qaydaları
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <a href="#">
                                         Müəllimlərin işə qəbulu və qiymətləndirilməsi qaydaları
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <a href="#">
                                         Peşəkar mühasib sertifikatının verilməsi qaydaları
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <a href="#">
                                         Tibb işçilərinin dövlət səhiyyə müəssisələrinə işə qəbulu və
                                         sertifikatlaşdırma qaydası
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <a href="#">
                                         Əmək müqaviləsi nümunələri
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <a href="#">
                                         Dövlət ümumi təhsil müəssisələrində işləyən
                                         təhsilverənlərin sertifikatlaşdırma qaydası
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <a href="#">
                                         Dövlət qulluğu vəzifələri üçün Sertifikatın forması
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <a href="#">
                                         Dövlət teleradio və mətbuat orqanlarına işə qəbul
                                         qaydaları
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                     <a href="#">
                                         Müsahibə elanının forması
                                     </a>
@@ -519,13 +526,13 @@
     <footer>
         <div class="footer-section container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-md-4 mb-sm-4 mb-3">
                     <h2>AKTUAL KEÇİDLƏR</h2>
                     <a href="" class="footer-item">Portal və saytlara keçid</a>
                     <a href="" class="footer-item">www.e-qanun.az</a>
                     <a href="" class="footer-item">www.huquqiaktlar.nakhchivan.az</a>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-md-4 mb-sm-4 mb-3">
                     <h2>NAXÇIVANIN TURİZM POTENSİALI</h2>
                     <a href="" class="footer-item">Turizm İnformasiya Mərkəzi</a>
                     <a href="" class="footer-item">Tarixi abidələr</a>
@@ -533,7 +540,7 @@
                     <a href="" class="footer-item">Muzeylər</a>
                     <a href="" class="footer-item">Restoran və kafelər</a>
                 </div>
-                <div class="col-2">
+                <div class="col-lg-2 col-md-6 col-sm-6 col-12 mb-3">
                     <h2>STATİSTİKA</h2>
                     <p class="footer-item"><span class="statistic">Onlayn : </span><span>0</span></p>
                     <p class="footer-item"><span class="statistic">Bu gün : </span><span>32</span></p>
@@ -543,7 +550,7 @@
                     <p class="footer-item"><span class="statistic">Ümumi : </span><span>49666</span></p>
 
                 </div>
-                <div class="col-4 contact-section">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-3 contact-section">
                     <a href="tel:+994605653883" class="footer-item">
                         <img class="contact-icon" src="./assets/img/phone.svg" alt="">
                         <span>(+994) 36 545 65 71</span>
@@ -569,7 +576,7 @@
             </div>
 
             <div class="subscribe-section row">
-                <form action="" class="d-flex col-4">
+                <form action="" class="d-flex col-lg-4 col-md-5 col-sm-6">
                     <input type="text" class="form-control" placeholder="Sizin e-mail ünvanınız">
                     <button class="form-control"><img src="./assets/img/send.svg" alt=""></button>
                 </form>

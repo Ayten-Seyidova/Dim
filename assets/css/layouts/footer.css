@@ -5,6 +5,7 @@ footer {
     height: 500px;
     position: relative;
     background-size: cover;
+    background-position: center;
 }
 
 .footer-section {
@@ -94,4 +95,74 @@ footer {
 
 .copyright a {
     color: #fff;
+}
+
+@media only screen and (max-width: 992px) {
+    footer {
+        margin-top: 50px;
+        height: 560px;
+    }
+    
+    .footer-section {
+        padding: 24px 0;
+        font-size: 14px;
+        line-height: 28px;
+    }
+    
+    .footer-section a {
+        font-size: 14px;
+    }
+    
+    .statistic {
+        width: 70px;
+    }
+    
+    .contact-section a {
+        margin-bottom: 5px;
+    }
+    
+    .contact-icon {
+        width: 16px;
+        margin-right: 16px;
+    }
+    
+    .subscribe-section input {
+        height: 40px;
+    }
+    
+    .subscribe-section button {
+        width: 50px;
+        height: 40px;
+    }
+    
+    .copyright {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .copyright {
+        line-height: 22px;
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    footer {
+        padding: 0 20px;
+        height: 900px;
+    }
+
+    .subscribe-section input {
+        height: 35px;
+    }
+    
+    .subscribe-section button {
+        width: 40px;
+        height: 35px;
+    }
+    
+    .contact-section a {
+        margin-bottom: 1px;
+    }
 }

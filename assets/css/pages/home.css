@@ -249,6 +249,7 @@
     margin-top: 88px;
     background-color: var(--lightBlueColor);
     background-image: url("../../img/announcement-back.svg");
+    background-position: center;
     height: 360px;
     padding: 20px 0;
 }
@@ -376,6 +377,8 @@
     background-image: url("../../img/photos-back.svg");
     background-repeat: no-repeat;
     height: 550px;
+    background-size: cover;
+    background-position: center;
     margin-bottom: 80px;
     padding: 60px 0;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -496,5 +499,465 @@
 
     .news-section .carousel-item img {
         height: 500px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .accordion-body a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .cabinet-btn {
+        margin: 30px 0;
+    }
+
+    .cabinet-btn button {
+        width: 200px;
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+    .cabinet-btn button img {
+        margin-right: 20px;
+    }
+
+    .news-section h3 {
+        font-size: 35px;
+    }
+
+    .news-section .carousel-item {
+        height: 400px;
+    }
+
+    .news-section .carousel-item img {
+        height: 400px;
+    }
+
+    .carousel-control-next-icon {
+        width: 15px;
+        height: 20px;
+    }
+
+    .carousel-control-prev-icon {
+        width: 15px;
+        height: 20px;
+    }
+
+    .slider-day {
+        font-size: 40px;
+        margin-right: 6px;
+    }
+
+    .slider-date {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .slider-caption h2 {
+        font-size: 20px;
+        line-height: 30px;
+        width: 90%;
+    }
+
+    .more-btn {
+        font-size: 20px;
+        line-height: 32px;
+        padding: 0 40px;
+        height: 32px;
+    }
+
+    .main-section h3 {
+        line-height: 30px;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .card-section .card-item {
+        height: 150px;
+    }
+
+    .card-item img {
+        height: 40px;
+    }
+
+    .card-item p {
+        font-size: 14px;
+        line-height: 25px;
+        padding-top: 10px;
+    }
+
+    .useful-section {
+        margin-top: 50px;
+    }
+
+    .useful-section .accordion-button {
+        font-size: 16px;
+        height: 42px;
+        padding: 6px 20px;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        margin-left: 10px;
+        transform: scale(0.7);
+    }
+
+    .accordion-button::after {
+        transform: var(--bs-accordion-btn-icon-transform) scale(0.7);
+        margin-left: 10px;
+    }
+
+    .accordion-body {
+        padding: 20px 20px 0 20px;
+    }
+
+    .accordion-body a {
+        padding: 0 10px;
+        font-size: 13px;
+    }
+
+    .announcement-section {
+        margin-top: 50px;
+        height: 300px;
+    }
+
+    .announcement-section h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .announcement-cards .card h6 {
+        font-size: 16px;
+        line-height: 24px;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .announcement-cards .card .card-text {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        margin-right: -30px !important;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+        margin-left: -30px !important;
+    }
+
+    .candidate-section {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .candidate-section h3 {
+        font-size: 16px;
+        line-height: 25px;
+        padding: 6px 12px;
+    }
+
+    .candidates {
+        padding: 25px 30px;
+    }
+
+    .photo-section {
+        height: 450px;
+        margin-bottom: 50px;
+        padding: 30px 0;
+    }
+
+    .photo-title {
+        font-size: 20px;
+        margin-left: 40px;
+        margin-bottom: 10px;
+    }
+
+    .photo-section .owl-carousel .owl-nav button.owl-next {
+        margin-right: -10px !important;
+        transform: scale(0.7);
+    }
+
+    .photo-section .owl-carousel .owl-nav button.owl-prev {
+        margin-left: -30px !important;
+        transform: rotate(-180deg) scale(0.7);
+    }
+
+    .photo-card img {
+        height: 300px;
+    }
+
+    .photo-img {
+        height: 340px;
+    }
+
+    .link-section .owl-nav {
+        top: 42%;
+    }
+
+    .link-section-title {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .cabinet-btn {
+        margin: 30px 0 20px 0;
+    }
+
+    .news-section h3 {
+        font-size: 30px;
+    }
+
+    .news-section .carousel-item {
+        height: 350px;
+    }
+
+    .news-section .carousel-item img {
+        height: 350px;
+    }
+
+    .main-section h3 {
+        font-size: 18px;
+    }
+
+    .card-section {
+        margin-top: 0;
+    }
+
+    .card-section .card-item {
+        height: 110px;
+        padding: 20px 10px;
+    }
+
+    .card-item img {
+        height: 25px;
+    }
+
+    .card-item p {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .useful-section {
+        margin-top: 40px;
+    }
+
+    .useful-section .accordion-button {
+        font-size: 14px;
+        height: 36px;
+    }
+
+    .accordion-body {
+        padding: 15px 10px 0 10px;
+    }
+
+    .accordion-body a {
+        padding: 0 5px;
+        font-size: 10px;
+    }
+
+    .announcement-section {
+        margin-top: 40px;
+        height: 250px;
+    }
+
+    .announcement-section h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .announcement-cards .card h6 {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .announcement-cards .card .card-text {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    
+    .announcement-section  .slider-day {
+        font-size: 30px;
+    }
+
+    .announcement-section  .slider-date {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .announcement-section .more-btn {
+        font-size: 18px;
+        padding: 0 30px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        margin-right: -20px !important;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+        margin-left: -20px !important;
+    }
+
+    .candidates {
+        padding: 15px 20px;
+    }
+
+    .candidate-item {
+        padding: 8px 12px;
+        font-size: 10px;
+    }
+
+    .photo-section {
+        height: 450px;
+        margin-bottom: 50px;
+        padding: 30px 0;
+    }
+
+    .photo-section .owl-carousel .owl-nav button.owl-next {
+        margin-right: -5px !important;
+    }
+
+    .photo-section .owl-carousel .owl-nav button.owl-prev {
+        margin-left: -25px !important;
+    }
+
+    .link-section .owl-carousel .owl-nav button.owl-next {
+        margin-right: -20px !important;
+    }
+
+    .link-section .owl-carousel .owl-nav button.owl-prev {
+        margin-left: -20px !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .cabinet-btn {
+        margin: 20px 0 10px 0;
+    }
+
+    .cabinet-btn button {
+        width: 150px;
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .cabinet-btn button img {
+        margin-right: 10px;
+    }
+
+    .news-section h3 {
+        font-size: 24px;
+    }
+
+    .news-section .carousel-item {
+        height: 250px;
+    }
+
+    .news-section .carousel-item img {
+        height: 250px;
+    }
+
+    .news-section .slider-controller {
+        margin-bottom: 60px;
+    }
+
+    .slider-day {
+        font-size: 22px;
+        margin-right: 4px;
+    }
+
+    .slider-date {
+        font-size: 10px;
+        line-height: 11px;
+    }
+
+    .slider-caption h2 {
+        font-size: 13px;
+        line-height: 20px;
+        width: 100%;
+    }
+
+    .more-btn {
+        font-size: 16px;
+        line-height: 25px;
+        padding: 0 20px;
+        height: 25px;
+    }
+
+    .main-section h3 {
+        font-size: 16px;
+    }
+
+    .main-item {
+        margin: auto;
+    }
+
+    .announcement-section {
+        height: 220px;
+    }
+
+    .announcement-section h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .announcement-cards {
+        width: 90%;
+        margin: auto;
+    }
+
+    .candidate-item {
+        height: auto;
+        padding: 8px;
+    }
+
+    .photo-section {
+        height: 300px;
+    }
+
+    .photo-section .photo-title {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .photo-card img {
+        height: 180px;
+    }
+    
+    .photo-img {
+        height: 220px;
+    }
+
+    .photo-section .owl-carousel .owl-nav button.owl-next {
+        margin-right: 5px !important;
+        transform: scale(.4);
+    }
+
+    .photo-section .owl-carousel .owl-nav button.owl-prev {
+        margin-left: -20px !important;
+        transform: rotate(-180deg) scale(.4);
+    }
+
+
+    .link-section .owl-carousel .owl-nav button.owl-next {
+        margin-right: -15px !important;
+    }
+
+    .link-section .owl-carousel .owl-nav button.owl-prev {
+        margin-left: -15px !important;
+    }
+    
+    .link-section p {
+        font-size: 11px;
+        line-height: 16px;
+    }
+    
+    .link-section img {
+        height: 110px;
     }
 }
