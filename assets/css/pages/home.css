@@ -148,34 +148,37 @@
     border-radius: 12px;
     height: 200px;
     margin-top: 16px;
-    padding: 35px 15px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    text-align: center;
     transition: .3s all ease-in-out;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    position: relative;
 }
 
 .card-item img {
-    height: 60px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    top: 0;
+    right: -4px;
+    transition: .3s all ease-in-out;
 }
 
 .card-section .card-item:hover {
     transform: scale(1.03);
+    filter: grayscale(.5);
+}
+
+.card-item:hover > img {
+    transform: scale(.9);
+    filter: brightness(1.7)
 }
 
 .card-section .card-item:active {
     transform: scale(1);
-}
-
-.card-item p {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 40px;
-    color: #fff;
 }
 
 .useful-section {
@@ -210,7 +213,7 @@
 }
 
 .accordion-body {
-    padding: 20px 80px 0 80px;
+    padding: 20px 0 0 0;
 }
 
 .accordion-body a {
@@ -381,7 +384,7 @@
     background-position: center;
     margin-bottom: 80px;
     padding: 60px 0;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    position: relative;
 }
 
 .photo-title {
@@ -389,40 +392,141 @@
     font-size: 28px;
     font-weight: 500;
     margin-left: 80px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
-.photo-section .owl-carousel .owl-nav button.owl-next {
-    margin-right: -30px !important;
-}
-
-.photo-section .owl-carousel .owl-nav button.owl-prev {
-    margin-left: -50px !important;
-    transform: rotate(-180deg);
-}
-
-.photo-section .owl-nav {
+#photoCarousel {
+    z-index: 1;
+    position: relative;
+    height: 410px;
     top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
 }
 
-.photo-card img {
-    height: 340px;
-    display: block;
+#photoCarousel div {
+    position: absolute;
+    transition: transform 400ms, left 400ms, opacity 400ms, z-index 0s;
+    opacity: 1;
+}
+
+#photoCarousel div img {
+    margin-top: 7px;
+    width: 400px;
+    height: 250px;
+    -webkit-user-drag: none;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 5px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 5px 0 #fff;
     transition: .3s all ease-in-out;
-    cursor: pointer;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    z-index: 4;
 }
 
-.photo-img {
-    height: 380px;
-    padding: 20px 0;
-}
-
-.photo-card img:hover {
+#photoCarousel div img:hover {
     transform: scale(1.1);
+}
+
+#photoCarousel div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+
+#photoCarousel div.hideLeft img {
+    width: 200px;
+}
+
+#photoCarousel div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+
+#photoCarousel div.hideRight img {
+    width: 200px;
+}
+
+#photoCarousel div.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(50px) translateX(-50%);
+}
+
+#photoCarousel img:hover {
+    cursor: pointer;
+}
+
+#photoCarousel div.prev img {
+    width: 300px;
+}
+
+#photoCarousel div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+
+#photoCarousel div.prevLeftSecond img {
+    width: 200px;
+}
+
+#photoCarousel div.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+}
+
+#photoCarousel div.selected:hover {
+    transform: translateY(0px) translateX(-50%) scale(0.95);
+}
+
+#photoCarousel div.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateY(50px) translateX(-50%);
+}
+
+#photoCarousel div.next img {
+    width: 300px;
+}
+
+#photoCarousel div.nextRightSecond {
+    z-index: 4;
+    left: 85%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+
+#photoCarousel div.nextRightSecond img {
+    width: 200px;
+}
+
+.buttons {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    transform: translate(-50%, -50%);
+    bottom: 10px;
+    z-index: 2;
+    height: 40px;
+}
+
+.buttons button {
+    background-color: transparent;
+    border: none;
+    transition: .3s all ease-in-out;
+}
+
+.buttons button:active {
+    transform: scale(0.9);
+}
+
+.buttons #prev img {
+    transform: rotate(180deg);
 }
 
 .link-section .owl-nav {
@@ -496,7 +600,6 @@
     .news-section .carousel-item {
         height: 500px;
     }
-
     .news-section .carousel-item img {
         height: 500px;
     }
@@ -506,199 +609,177 @@
     .accordion-body a {
         font-size: 14px;
     }
+    .buttons {
+        width: 97%;
+    }
 }
 
 @media only screen and (max-width: 992px) {
     .cabinet-btn {
         margin: 30px 0;
     }
-
     .cabinet-btn button {
         width: 200px;
         padding: 10px 18px;
         font-size: 14px;
     }
-
     .cabinet-btn button img {
         margin-right: 20px;
     }
-
     .news-section h3 {
         font-size: 35px;
     }
-
     .news-section .carousel-item {
         height: 400px;
     }
-
     .news-section .carousel-item img {
         height: 400px;
     }
-
     .carousel-control-next-icon {
         width: 15px;
         height: 20px;
     }
-
     .carousel-control-prev-icon {
         width: 15px;
         height: 20px;
     }
-
     .slider-day {
         font-size: 40px;
         margin-right: 6px;
     }
-
     .slider-date {
         font-size: 14px;
         line-height: 20px;
     }
-
     .slider-caption h2 {
         font-size: 20px;
         line-height: 30px;
         width: 90%;
     }
-
     .more-btn {
         font-size: 20px;
         line-height: 32px;
         padding: 0 40px;
         height: 32px;
     }
-
     .main-section h3 {
         line-height: 30px;
         font-size: 20px;
         margin-left: 10px;
     }
-
     .card-section .card-item {
         height: 150px;
     }
-
-    .card-item img {
-        height: 40px;
-    }
-
-    .card-item p {
-        font-size: 14px;
-        line-height: 25px;
-        padding-top: 10px;
-    }
-
     .useful-section {
         margin-top: 50px;
     }
-
     .useful-section .accordion-button {
         font-size: 16px;
         height: 42px;
         padding: 6px 20px;
     }
-
     .accordion-button:not(.collapsed)::after {
         margin-left: 10px;
         transform: scale(0.7);
     }
-
     .accordion-button::after {
         transform: var(--bs-accordion-btn-icon-transform) scale(0.7);
         margin-left: 10px;
     }
-
     .accordion-body {
-        padding: 20px 20px 0 20px;
+        padding: 20px 0 0 0;
     }
-
     .accordion-body a {
         padding: 0 10px;
         font-size: 13px;
     }
-
     .announcement-section {
         margin-top: 50px;
         height: 300px;
     }
-
     .announcement-section h3 {
         font-size: 30px;
         margin-bottom: 20px;
     }
-
     .announcement-cards .card h6 {
         font-size: 16px;
         line-height: 24px;
         padding-right: 0;
         margin-bottom: 20px;
     }
-
     .announcement-cards .card .card-text {
         font-size: 18px;
         line-height: 30px;
     }
-
     .owl-carousel .owl-nav button.owl-next {
         margin-right: -30px !important;
     }
-
     .owl-carousel .owl-nav button.owl-prev {
         margin-left: -30px !important;
     }
-
     .candidate-section {
         margin-top: 50px;
         margin-bottom: 50px;
     }
-
     .candidate-section h3 {
         font-size: 16px;
         line-height: 25px;
         padding: 6px 12px;
     }
-
     .candidates {
         padding: 25px 30px;
     }
-
     .photo-section {
         height: 450px;
         margin-bottom: 50px;
         padding: 30px 0;
     }
-
     .photo-title {
         font-size: 20px;
         margin-left: 40px;
         margin-bottom: 10px;
     }
-
-    .photo-section .owl-carousel .owl-nav button.owl-next {
-        margin-right: -10px !important;
-        transform: scale(0.7);
+    #photoCarousel div img {
+        width: 350px;
+        height: 230px;
     }
-
-    .photo-section .owl-carousel .owl-nav button.owl-prev {
-        margin-left: -30px !important;
-        transform: rotate(-180deg) scale(0.7);
+    .buttons {
+        width: 100%;
     }
-
-    .photo-card img {
-        height: 300px;
-    }
-
-    .photo-img {
-        height: 340px;
-    }
-
     .link-section .owl-nav {
         top: 42%;
     }
-
     .link-section-title {
         font-size: 20px;
         line-height: 20px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #photoCarousel div img {
+        width: 250px;
+        height: 200px;
+    }
+    #photoCarousel {
+        height: 350px;
+    }
+    #photoCarousel div.hideLeft img {
+        width: 160px;
+    }
+    #photoCarousel div.hideRight img {
+        width: 160px;
+    }
+    #photoCarousel div.prev img {
+        width: 200px;
+    }
+    #photoCarousel div.prevLeftSecond img {
+        width: 160px;
+    }
+    #photoCarousel div.next img {
+        width: 200px;
+    }
+    #photoCarousel div.nextRightSecond img {
+        width: 160px;
     }
 }
 
@@ -706,132 +787,183 @@
     .cabinet-btn {
         margin: 30px 0 20px 0;
     }
-
     .news-section h3 {
         font-size: 30px;
     }
-
     .news-section .carousel-item {
         height: 350px;
     }
-
     .news-section .carousel-item img {
         height: 350px;
     }
-
     .main-section h3 {
         font-size: 18px;
     }
-
     .card-section {
         margin-top: 0;
     }
-
     .card-section .card-item {
         height: 110px;
-        padding: 20px 10px;
     }
-
-    .card-item img {
-        height: 25px;
-    }
-
-    .card-item p {
-        font-size: 11px;
-        line-height: 16px;
-    }
-
     .useful-section {
         margin-top: 40px;
     }
-
     .useful-section .accordion-button {
         font-size: 14px;
         height: 36px;
     }
-
     .accordion-body {
-        padding: 15px 10px 0 10px;
+        padding: 15px 0 0 0;
     }
-
     .accordion-body a {
         padding: 0 5px;
         font-size: 10px;
     }
-
     .announcement-section {
         margin-top: 40px;
         height: 250px;
     }
-
     .announcement-section h3 {
         font-size: 24px;
         margin-bottom: 10px;
     }
-
     .announcement-cards .card h6 {
         font-size: 14px;
         line-height: 20px;
         margin-bottom: 10px;
     }
-
     .announcement-cards .card .card-text {
         font-size: 13px;
         line-height: 22px;
     }
-
-    
-    .announcement-section  .slider-day {
+    .announcement-section .slider-day {
         font-size: 30px;
     }
-
-    .announcement-section  .slider-date {
+    .announcement-section .slider-date {
         font-size: 10px;
         line-height: 15px;
     }
-
     .announcement-section .more-btn {
         font-size: 18px;
         padding: 0 30px;
     }
-
     .owl-carousel .owl-nav button.owl-next {
         margin-right: -20px !important;
     }
-
     .owl-carousel .owl-nav button.owl-prev {
         margin-left: -20px !important;
     }
-
     .candidates {
         padding: 15px 20px;
     }
-
     .candidate-item {
         padding: 8px 12px;
         font-size: 10px;
     }
-
-    .photo-section {
-        height: 450px;
-        margin-bottom: 50px;
-        padding: 30px 0;
+    #photoCarousel div img {
+        width: 250px;
+        height: 200px;
     }
-
-    .photo-section .owl-carousel .owl-nav button.owl-next {
-        margin-right: -5px !important;
+    #photoCarousel {
+        height: 350px;
     }
-
-    .photo-section .owl-carousel .owl-nav button.owl-prev {
-        margin-left: -25px !important;
+    #photoCarousel div.hideLeft img {
+        width: 160px;
     }
-
+    #photoCarousel div.hideRight img {
+        width: 160px;
+    }
+    #photoCarousel div.prev img {
+        width: 200px;
+    }
+    #photoCarousel div.prevLeftSecond img {
+        width: 160px;
+    }
+    #photoCarousel div.next img {
+        width: 200px;
+    }
+    #photoCarousel div.nextRightSecond img {
+        width: 160px;
+    }
+    .buttons {
+        width: 102%;
+    }
     .link-section .owl-carousel .owl-nav button.owl-next {
         margin-right: -20px !important;
     }
-
     .link-section .owl-carousel .owl-nav button.owl-prev {
         margin-left: -20px !important;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .photo-section {
+        height: 380px;
+    }
+    #photoCarousel div img {
+        width: 220px;
+        height: 170px;
+    }
+    #photoCarousel {
+        height: 280px;
+    }
+    #photoCarousel div.hideLeft img {
+        width: 140px;
+    }
+    #photoCarousel div.hideRight img {
+        width: 140px;
+    }
+    #photoCarousel div.prev img {
+        width: 180px;
+    }
+    #photoCarousel div.prevLeftSecond img {
+        width: 140px;
+    }
+    #photoCarousel div.next img {
+        width: 180px;
+    }
+    #photoCarousel div.nextRightSecond img {
+        width: 140px;
+    }
+    .buttons {
+        width: 102%;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .photo-section {
+        height: 380px;
+    }
+    #photoCarousel div img {
+        width: 220px;
+        height: 170px;
+    }
+    #photoCarousel {
+        height: 280px;
+    }
+    #photoCarousel div.hideLeft img {
+        width: 140px;
+    }
+    #photoCarousel div.hideRight img {
+        width: 140px;
+    }
+    #photoCarousel div.prev img {
+        width: 180px;
+    }
+    #photoCarousel div.prevLeftSecond img {
+        width: 140px;
+    }
+    #photoCarousel div.next img {
+        width: 180px;
+    }
+    #photoCarousel div.nextRightSecond img {
+        width: 140px;
+    }
+    .buttons {
+        width: 103%;
+    }
+    .buttons button {
+        transform: scale(0.8);
     }
 }
 
@@ -839,125 +971,183 @@
     .cabinet-btn {
         margin: 20px 0 10px 0;
     }
-
     .cabinet-btn button {
         width: 150px;
         padding: 8px 10px;
         font-size: 12px;
     }
-
     .cabinet-btn button img {
         margin-right: 10px;
     }
-
     .news-section h3 {
         font-size: 24px;
     }
-
     .news-section .carousel-item {
         height: 250px;
     }
-
     .news-section .carousel-item img {
         height: 250px;
     }
-
     .news-section .slider-controller {
         margin-bottom: 60px;
     }
-
     .slider-day {
         font-size: 22px;
         margin-right: 4px;
     }
-
     .slider-date {
         font-size: 10px;
         line-height: 11px;
     }
-
     .slider-caption h2 {
         font-size: 13px;
         line-height: 20px;
         width: 100%;
     }
-
     .more-btn {
         font-size: 16px;
         line-height: 25px;
         padding: 0 20px;
         height: 25px;
     }
-
     .main-section h3 {
         font-size: 16px;
     }
-
     .main-item {
         margin: auto;
     }
-
     .announcement-section {
         height: 220px;
     }
-
     .announcement-section h3 {
         font-size: 20px;
         line-height: 30px;
     }
-
     .announcement-cards {
         width: 90%;
         margin: auto;
     }
-
     .candidate-item {
         height: auto;
         padding: 8px;
     }
-
     .photo-section {
-        height: 300px;
+        height: 280px;
     }
-
     .photo-section .photo-title {
         font-size: 16px;
         margin-left: 20px;
     }
-
-    .photo-card img {
-        height: 180px;
+    #photoCarousel div img {
+        width: 180px;
+        height: 120px;
     }
-    
-    .photo-img {
-        height: 220px;
+    #photoCarousel {
+        height: 200px;
     }
-
-    .photo-section .owl-carousel .owl-nav button.owl-next {
-        margin-right: 5px !important;
-        transform: scale(.4);
+    #photoCarousel div.hideLeft img {
+        width: 100px;
     }
-
-    .photo-section .owl-carousel .owl-nav button.owl-prev {
-        margin-left: -20px !important;
-        transform: rotate(-180deg) scale(.4);
+    #photoCarousel div.hideRight img {
+        width: 100px;
     }
-
-
+    #photoCarousel div.prev img {
+        width: 140px;
+    }
+    #photoCarousel div.prevLeftSecond img {
+        width: 100px;
+    }
+    #photoCarousel div.next img {
+        width: 140px;
+    }
+    #photoCarousel div.nextRightSecond img {
+        width: 100px;
+    }
+    .buttons {
+        width: 103%;
+    }
+    .buttons button {
+        transform: scale(0.6);
+    }
     .link-section .owl-carousel .owl-nav button.owl-next {
         margin-right: -15px !important;
     }
-
     .link-section .owl-carousel .owl-nav button.owl-prev {
         margin-left: -15px !important;
     }
-    
     .link-section p {
         font-size: 11px;
         line-height: 16px;
     }
-    
     .link-section img {
         height: 110px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .photo-section {
+        height: 250px;
+    }
+    #photoCarousel div img {
+        width: 160px;
+        height: 100px;
+    }
+    #photoCarousel {
+        height: 170px;
+    }
+    #photoCarousel div.hideLeft img {
+        width: 80px;
+    }
+    #photoCarousel div.hideRight img {
+        width: 80px;
+    }
+    #photoCarousel div.prev img {
+        width: 110px;
+    }
+    #photoCarousel div.prevLeftSecond img {
+        width: 80px;
+    }
+    #photoCarousel div.next img {
+        width: 110px;
+    }
+    #photoCarousel div.nextRightSecond img {
+        width: 80px;
+    }
+    .buttons {
+        width: 103%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .photo-section {
+        height: 250px;
+    }
+    #photoCarousel div img {
+        width: 140px;
+        height: 90px;
+    }
+    #photoCarousel {
+        height: 170px;
+    }
+    #photoCarousel div.hideLeft img {
+        width: 70px;
+    }
+    #photoCarousel div.hideRight img {
+        width: 70px;
+    }
+    #photoCarousel div.prev img {
+        width: 100px;
+    }
+    #photoCarousel div.prevLeftSecond img {
+        width: 70px;
+    }
+    #photoCarousel div.next img {
+        width: 100px;
+    }
+    #photoCarousel div.nextRightSecond img {
+        width: 70px;
+    }
+    .buttons {
+        width: 105%;
     }
 }

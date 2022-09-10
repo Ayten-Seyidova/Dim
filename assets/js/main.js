@@ -15,8 +15,6 @@ $(() => {
         }
     })
 
-
-
     function fixMenu() {
         let imgHeight = $(".header-img").height();
         if ($(window).scrollTop() > imgHeight) {
@@ -82,25 +80,25 @@ $(() => {
         }
     })
 
-    $('.owl-carousel2').owlCarousel({
-        autoplay: true,
-        autoplayTimeout: 3000,
-        loop: true,
-        margin: 30,
-        nav: true,
-        navText: ["<img src='./assets/img/photo-right.svg'>", "<img src='./assets/img/photo-right.svg'>"],
-        responsive: {
-            0: {
-                items: 2
-            },
-            768: {
-                items: 3
-            },
-            1200: {
-                items: 4
-            }
-        }
-    })
+    // $('.owl-carousel2').owlCarousel({
+    //     autoplay: true,
+    //     autoplayTimeout: 3000,
+    //     loop: true,
+    //     margin: 30,
+    //     nav: true,
+    //     navText: ["<img src='./assets/img/photo-right.svg'>", "<img src='./assets/img/photo-right.svg'>"],
+    //     responsive: {
+    //         0: {
+    //             items: 2
+    //         },
+    //         768: {
+    //             items: 3
+    //         },
+    //         1200: {
+    //             items: 4
+    //         }
+    //     }
+    // })
 
     $('.owl-carousel3').owlCarousel({
         autoplay: false,
